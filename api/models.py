@@ -25,6 +25,7 @@ class StoreBranch(models.Model):
     state = models.CharField(max_length=31, null=True, blank=True)
     lat = models.FloatField("Latitude")
     lng = models.FloatField("Longitude")
+    phone = models.CharField('Phone', max_length=30, null=True, blank=True)
     created_at = models.DateTimeField("Created At", auto_now_add=True)
     updated_at = models.DateTimeField("Updated At", auto_now=True)
 

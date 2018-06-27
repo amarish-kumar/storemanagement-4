@@ -16,8 +16,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="93" selection-start-line="10" selection-start-column="93" selection-end-line="10" selection-end-column="93" />
+            <state relative-caret-position="384">
+              <caret line="27" column="74" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -53,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/storemanagement/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="111" column="23" lean-forward="true" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
+              <caret line="111" column="23" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -67,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/api/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="141" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="141" />
+              <caret line="1" column="141" selection-start-line="1" selection-end-line="1" selection-end-column="141" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -79,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/api/viewsets.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="23" lean-forward="true" selection-start-line="3" selection-end-line="4" selection-end-column="23" />
+              <caret line="4" column="23" selection-start-line="3" selection-end-line="4" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -145,6 +145,11 @@
               <item name="storemanagement" type="b2602c69:ProjectViewProjectNode" />
               <item name="storemanagement" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="storemanagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="storemanagement" type="462c0819:PsiDirectoryNode" />
+              <item name="drf_auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="storemanagement" type="b2602c69:ProjectViewProjectNode" />
@@ -230,7 +235,7 @@
     <entry file="file://$PROJECT_DIR$/api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="141" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="141" />
+          <caret line="1" column="141" selection-start-line="1" selection-end-line="1" selection-end-column="141" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
@@ -240,7 +245,7 @@
     <entry file="file://$PROJECT_DIR$/api/viewsets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="3" selection-end-line="4" selection-end-column="23" />
+          <caret line="4" column="23" selection-start-line="3" selection-end-line="4" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -267,14 +272,24 @@
     <entry file="file://$PROJECT_DIR$/storemanagement/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="111" column="23" lean-forward="true" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
+          <caret line="111" column="23" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drf_auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="93" selection-start-line="10" selection-start-column="93" selection-end-line="10" selection-end-column="93" />
+        <state relative-caret-position="384">
+          <caret line="27" column="74" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
