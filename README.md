@@ -1,4 +1,4 @@
-# MyLedger Django RestAPI
+# StoreManagement Django RestAPI
 
 Django Admin dashboard http://storemanagement.durlov.com/admin
 RestAPI http://storemanagement.durlov.com/api
