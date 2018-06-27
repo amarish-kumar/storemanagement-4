@@ -42,6 +42,16 @@ class OrderedProductSerializer(ModelSerializer):
         fields = '__all__'
 
 class OrderSerializer(ModelSerializer):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        context = kwargs.get('context', None)
+        if context:
+            request = kwargs['context']['request']
+            if request.GET.get("embed_address"):
+                self.fields["address"] = OrderAddressSerializer(many=False, read_only=True, context=context)
+            self.fields["products"] = OrderedProductSerializer(many=True, read_only=True, context=context)
+
     class Meta:
         model = Order
         fields = '__all__'

@@ -81,7 +81,7 @@ class ProductVariation(models.Model):
     updated_at = models.DateTimeField("Updated At", auto_now=True)
 
     def __str__(self):
-        return "{} - {} - {}".format(self.product.name, size, color)
+        return "{} - {} - {}".format(self.product.name, self.size, self.color)
 
 class OrderAddress(models.Model):
     user = models.ForeignKey(User, on_delete=models.PROTECT)
@@ -148,6 +148,17 @@ class Order(models.Model):
 
     def __str__(self):
         return "{} - {}".format(self.id, self.user.first_name)
+
+    def products(self):
+        return self.orderedproduct_set.all()
+
+    def boutique(self):
+        ordered_products = self.orderedproduct_set.all()
+        if len(ordered_products):
+            ordered_product = ordered_products[0]
+            return ordered_product.product.subcategory.category.store
+
+        return None
 
 
 class OrderedProduct(models.Model):
