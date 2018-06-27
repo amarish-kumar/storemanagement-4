@@ -60,10 +60,18 @@ class Product(models.Model):
     updated_at = models.DateTimeField("Updated At", auto_now=True)
 
     def __str__(self):
-        return "{} - {}".format(self.name, subcategory.category.store.name)
+        return "{} - {}".format(self.name, self.subcategory.category.store.name)
+
+class ProductPicture(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    picture = models.ImageField(upload_to='media/uploads/products')
+    order = models.IntegerField()
+    created_at = models.DateTimeField("Created At", auto_now_add=True)
+    updated_at = models.DateTimeField("Updated At", auto_now=True)
 
 class ProductVariation(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    product_picture = models.ForeignKey(ProductPicture, on_delete=models.PROTECT, null=True, blank=True)
     size = models.CharField(max_length=15)
     price = models.DecimalField(decimal_places=2, max_digits=15)
     discount_percentage = models.FloatField("Discount (%)", max_length=10, default=0)
@@ -74,14 +82,6 @@ class ProductVariation(models.Model):
 
     def __str__(self):
         return "{} - {} - {}".format(self.product.name, size, color)
-
-class ProductPicture(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    picture = models.ImageField(upload_to='media/uploads/products')
-    order = models.IntegerField()
-    created_at = models.DateTimeField("Created At", auto_now_add=True)
-    updated_at = models.DateTimeField("Updated At", auto_now=True)
-
 
 class OrderAddress(models.Model):
     user = models.ForeignKey(User, on_delete=models.PROTECT)
